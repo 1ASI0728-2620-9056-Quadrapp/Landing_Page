@@ -1,0 +1,165 @@
+---
+const faqs = [
+  {
+    num: "01",
+    q: "¿Quadrapp reserva espacios?",
+    a: "No. La experiencia informa condiciones y probabilidades; no incluye reservas."
+  },
+  {
+    num: "02",
+    q: "¿La app comparte mi ubicación?",
+    a: "No. El ETA se calcula en el dispositivo y solo se comparten minutos de llegada."
+  },
+  {
+    num: "03",
+    q: "¿Qué significa UNKNOWN?",
+    a: "Es un espacio sin lectura confiable. Se muestra por separado y nunca se cuenta como libre."
+  },
+  {
+    num: "04",
+    q: "¿Qué ocurre si no hay conexión?",
+    a: "La app conserva la última consulta, indica su antigüedad y sincroniza cuando vuelve la señal."
+  },
+  {
+    num: "05",
+    q: "¿Qué alimenta la predicción?",
+    a: "Ocupación histórica, flujo reciente, calendario académico y eventos registrados."
+  },
+  {
+    num: "06",
+    q: "¿La consola permite exportar datos?",
+    a: "Sí, las vistas operativas y analíticas muestran acciones de exportación donde corresponde."
+  }
+];
+---
+
+<section class="faq-section" id="faq">
+  <div class="container text-center">
+    <span class="section-tag">FAQ</span>
+    <h2 class="section-title">Preguntas frecuentes</h2>
+    <p class="section-desc centered">
+      Respuestas directas sobre el alcance, los datos y la operación de Quadrapp.
+    </p>
+
+    <!-- FAQ Accordion List -->
+    <div class="faq-list">
+      {faqs.map((faq, index) => (
+        <details class="faq-row" open={index === 0}>
+          <summary class="faq-summary">
+            <div class="faq-left">
+              <span class="faq-num">{faq.num}</span>
+              <span class="faq-q-text">{faq.q}</span>
+            </div>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-answer-box">
+            <p>{faq.a}</p>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-section {
+    padding: 6rem 0;
+    background-color: #ffffff;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .centered {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.5rem;
+  }
+
+  .faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .faq-row {
+    border-bottom: 1px solid var(--color-border-light);
+    padding: 1.25rem 0;
+    transition: background-color 0.2s;
+  }
+
+  .faq-row:first-child {
+    border-top: 1px solid var(--color-border-light);
+  }
+
+  .faq-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    padding: 0.5rem 0;
+  }
+
+  .faq-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .faq-num {
+    font-size: 0.9375rem;
+    font-weight: 800;
+    color: var(--color-teal-primary);
+    min-width: 24px;
+  }
+
+  .faq-q-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+  }
+
+  .faq-chevron {
+    width: 20px;
+    height: 20px;
+    color: var(--color-text-muted);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .faq-row[open] .faq-chevron {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer-box {
+    padding-left: 3.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .faq-answer-box p {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 640px) {
+    .faq-left {
+      gap: 1rem;
+    }
+    .faq-answer-box {
+      padding-left: 2.5rem;
+    }
+  }
+</style>

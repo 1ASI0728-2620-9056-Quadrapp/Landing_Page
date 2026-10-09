@@ -1,0 +1,153 @@
+---
+---
+
+<section class="how-section" id="como-funciona">
+  <div class="container text-center">
+    <span class="section-tag">Cómo Funciona</span>
+    <h2 class="section-title">De señales dispersas a una decisión simple</h2>
+    <p class="section-desc centered">
+      Quadrapp organiza la información disponible sin prometer certezas: comunica probabilidad, confianza y antigüedad del dato.
+    </p>
+
+    <!-- 3 Cards Grid -->
+    <div class="cards-grid">
+      <!-- Card 01 -->
+      <div class="step-card">
+        <div class="card-header">
+          <span class="step-num">01</span>
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4.93 19.07a10 10 0 0 1 0-14.14M7.76 16.24a6 6 0 0 1 0-8.48M12 12h.01M16.24 7.76a6 6 0 0 1 0 8.48M19.07 4.93a10 10 0 0 1 0 14.14"/>
+            </svg>
+          </div>
+        </div>
+        <h3 class="card-title">Observa</h3>
+        <p class="card-text">
+          Sensores y gateways reportan ocupación y estados desconocidos.
+        </p>
+      </div>
+
+      <!-- Card 02 -->
+      <div class="step-card">
+        <div class="card-header">
+          <span class="step-num">02</span>
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+          </div>
+        </div>
+        <h3 class="card-title">Entiende</h3>
+        <p class="card-text">
+          El modelo considera flujo, historial, calendario académico y eventos.
+        </p>
+      </div>
+
+      <!-- Card 03 -->
+      <div class="step-card">
+        <div class="card-header">
+          <span class="step-num">03</span>
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/>
+            </svg>
+          </div>
+        </div>
+        <h3 class="card-title">Anticipa</h3>
+        <p class="card-text">
+          Cada segmento recibe una vista útil: decisión de llegada u operación del turno.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .how-section {
+    padding: 6rem 0;
+    background-color: var(--color-bg-page);
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .centered {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .step-card {
+    background-color: #f3f9f8;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 2.25rem 2rem;
+    transition: all var(--transition-smooth);
+    position: relative;
+  }
+
+  .step-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 125, 112, 0.08);
+    border-color: rgba(0, 125, 112, 0.3);
+    background-color: #ffffff;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.75rem;
+  }
+
+  .step-num {
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: var(--color-teal-primary);
+    letter-spacing: 0.05em;
+  }
+
+  .icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #d6eee8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-teal-primary);
+  }
+
+  .icon-circle svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin-bottom: 0.75rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    line-height: 1.55;
+  }
+
+  @media (max-width: 960px) {
+    .cards-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+</style>

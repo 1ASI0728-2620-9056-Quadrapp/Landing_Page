@@ -1,0 +1,249 @@
+---
+---
+
+<section class="privacy-design-section" id="privacidad">
+  <div class="container privacy-design-grid">
+    <!-- Left Column: Visual Privacy graphic card -->
+    <div class="privacy-visual-wrapper">
+      <div class="privacy-graphic-card">
+        <!-- Concentric circles background -->
+        <div class="circle-outer"></div>
+        <div class="circle-inner"></div>
+
+        <!-- Center Dark Navy Shield Container -->
+        <div class="center-navy-shield">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <!-- Floating Badge Top Right -->
+        <div class="floating-badge top-right-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <span>27 min de llegada</span>
+        </div>
+
+        <!-- Floating Badge Bottom Left -->
+        <div class="floating-badge bottom-left-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+            <line x1="2" y1="2" x2="22" y2="22"/>
+          </svg>
+          <span>Sin ubicación</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Privacy Content -->
+    <div class="privacy-text-column">
+      <span class="section-tag">Privacidad por diseño</span>
+      <h2 class="section-title">La utilidad no exige seguir a las personas</h2>
+      <p class="section-desc">
+        La app calcula el ETA en el dispositivo. Quadratpp recibe únicamente los minutos estimados de llegada necesarios para generar la consulta, nunca una coordenada personal.
+      </p>
+
+      <!-- 3 Pill Badges List -->
+      <div class="privacy-pills-list">
+        <div class="privacy-pill">
+          <div class="pill-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+          </div>
+          <span>Minimización de datos desde el origen</span>
+        </div>
+
+        <div class="privacy-pill">
+          <div class="pill-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+          </div>
+          <span>Separación entre identidad y predicción</span>
+        </div>
+
+        <div class="privacy-pill">
+          <div class="pill-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+          </div>
+          <span>Comunicación visible de confianza y antigüedad</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .privacy-design-section {
+    padding: 6rem 0;
+    background-color: #f7faf9;
+    border-top: 1px solid var(--color-border-light);
+  }
+
+  .privacy-design-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  /* Left Column Visual Styling */
+  .privacy-visual-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .privacy-graphic-card {
+    width: 100%;
+    max-width: 440px;
+    height: 340px;
+    background-color: #e2f3ef;
+    border-radius: var(--radius-lg);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .circle-outer {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.45);
+  }
+
+  .circle-inner {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .center-navy-shield {
+    position: relative;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-bg-hero);
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3bf1d4;
+    box-shadow: 0 16px 36px rgba(8, 34, 44, 0.2);
+  }
+
+  .center-navy-shield svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Floating Badges */
+  .floating-badge {
+    position: absolute;
+    z-index: 3;
+    background-color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  }
+
+  .top-right-badge {
+    top: 2.25rem;
+    right: 2rem;
+    color: var(--color-text-main);
+  }
+
+  .top-right-badge svg {
+    width: 16px;
+    height: 16px;
+    color: var(--color-teal-primary);
+  }
+
+  .bottom-left-badge {
+    bottom: 2.25rem;
+    left: 2rem;
+    color: #b91c1c;
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+  }
+
+  .bottom-left-badge svg {
+    width: 16px;
+    height: 16px;
+    color: #ef4444;
+  }
+
+  /* Right Column Styling */
+  .privacy-text-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .privacy-pills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .privacy-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 0.85rem 1.25rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    transition: transform var(--transition-fast), border-color var(--transition-fast);
+  }
+
+  .privacy-pill:hover {
+    transform: translateX(4px);
+    border-color: rgba(0, 125, 112, 0.4);
+  }
+
+  .pill-check {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d6eee8;
+    color: var(--color-teal-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .pill-check svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  @media (max-width: 960px) {
+    .privacy-design-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+</style>

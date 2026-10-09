@@ -1,0 +1,329 @@
+---
+---
+
+<section class="hero-section">
+  <div class="hero-bg-wrapper">
+    <img src="/images/campus-bg.jpg" alt="Vista aérea Campus Universitario" class="hero-bg-img" />
+    <div class="hero-gradient-overlay"></div>
+  </div>
+
+  <div class="container hero-container">
+    <div class="hero-content">
+      <!-- Tag Pill -->
+      <div class="hero-tag-pill">
+        <svg class="tag-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <span>Movilidad universitaria, con contexto</span>
+      </div>
+
+      <!-- Main Title -->
+      <h1 class="hero-title">
+        Anticipa el estacionamiento antes de salir.
+      </h1>
+
+      <!-- Description -->
+      <p class="hero-desc">
+        Quadrapp convierte ocupación, flujo, calendario y eventos en una respuesta clara para conductores y una operación visible para instituciones.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="hero-cta-group">
+        <a href="#conductores" class="btn-primary">
+          <span>Conocer la app</span>
+          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#como-funciona" class="btn-secondary">
+          Soy una institución
+        </a>
+      </div>
+
+      <!-- Checkmarks list -->
+      <div class="hero-features-list">
+        <div class="feature-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="12" cy="12" r="10" stroke-opacity="0.5"/>
+            <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Sin reservas</span>
+        </div>
+        <div class="feature-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="12" cy="12" r="10" stroke-opacity="0.5"/>
+            <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Sin pagos</span>
+        </div>
+        <div class="feature-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="12" cy="12" r="10" stroke-opacity="0.5"/>
+            <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Sin rastreo de ubicación</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Mint Feature Bar -->
+  <div class="hero-mint-bar">
+    <div class="container mint-bar-grid">
+      <div class="mint-feature">
+        <div class="mint-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <div class="mint-text">
+          <h3>Antes de salir</h3>
+          <p>Una estimación comprensible para tu hora de llegada</p>
+        </div>
+      </div>
+
+      <div class="mint-feature">
+        <div class="mint-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+        </div>
+        <div class="mint-text">
+          <h3>Durante el turno</h3>
+          <p>Visibilidad de ocupación, flujo y salud operativa</p>
+        </div>
+      </div>
+
+      <div class="mint-feature">
+        <div class="mint-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div class="mint-text">
+          <h3>Con privacidad</h3>
+          <p>Minutos de llegada, nunca ubicación personal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-section {
+    position: relative;
+    background-color: var(--color-bg-hero);
+    color: var(--color-text-white);
+    overflow: hidden;
+  }
+
+  .hero-bg-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .hero-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+  }
+
+  .hero-gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg, 
+      #08222c 0%, 
+      #08222ce6 45%, 
+      #08222c99 70%, 
+      #08222c33 100%
+    );
+  }
+
+  .hero-container {
+    position: relative;
+    z-index: 2;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+  }
+
+  .hero-content {
+    max-width: 620px;
+  }
+
+  .hero-tag-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.4rem 1rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #e2f5f1;
+    margin-bottom: 2rem;
+  }
+
+  .tag-icon {
+    width: 16px;
+    height: 16px;
+    color: #3bf1d4;
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-desc {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #b3c9d1;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+  }
+
+  .hero-cta-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    background-color: #ffffff;
+    color: #0c232a;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.85rem 1.65rem;
+    border-radius: var(--radius-pill);
+    transition: all var(--transition-fast);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-primary:hover {
+    background-color: #e6f5f2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .arrow-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.85rem 1.65rem;
+    border-radius: 12px;
+    transition: all var(--transition-fast);
+    backdrop-filter: blur(4px);
+  }
+
+  .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .hero-features-list {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #a2beca;
+  }
+
+  .check-icon {
+    width: 18px;
+    height: 18px;
+    color: #3bf1d4;
+  }
+
+  /* Mint Bar */
+  .hero-mint-bar {
+    position: relative;
+    z-index: 2;
+    background-color: var(--color-bg-mint);
+    border-top: 1px solid rgba(0, 125, 112, 0.1);
+    padding: 1.75rem 0;
+  }
+
+  .mint-bar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .mint-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .mint-icon-box {
+    width: 28px;
+    height: 28px;
+    color: var(--color-teal-primary);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .mint-text h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin-bottom: 0.25rem;
+  }
+
+  .mint-text p {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+  }
+
+  @media (max-width: 960px) {
+    .mint-bar-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .hero-gradient-overlay {
+      background: linear-gradient(
+        180deg, 
+        #08222ce6 0%, 
+        #08222cf2 60%,
+        #08222c 100%
+      );
+    }
+  }
+</style>

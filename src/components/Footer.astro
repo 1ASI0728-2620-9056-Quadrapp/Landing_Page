@@ -1,0 +1,154 @@
+---
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Left Column: Logo & Description -->
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">
+          <div class="logo-icon-bg">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C7.58172 2 4 5.58172 4 10C4 15.25 12 22 12 22C12 22 20 15.25 20 10C20 5.58172 16.4183 2 12 2ZM12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" fill="white"/>
+            </svg>
+          </div>
+          <span>Quadrapp</span>
+        </a>
+        <p class="brand-desc">
+          Quadrapp es una solución de Integra Labs para anticipar y comprender las condiciones de estacionamiento en comunidades educativas.
+        </p>
+      </div>
+
+      <!-- Links Grid -->
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>Producto</h4>
+          <a href="#como-funciona">Cómo funciona</a>
+          <a href="#conductores">Conductores</a>
+          <a href="#senales">Instituciones</a>
+          <a href="#privacidad">Privacidad</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Compañía</h4>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#contacto">Contacto</a>
+          <a href="#faq">Preguntas frecuentes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Line & Copyright -->
+    <div class="footer-bottom-bar">
+      <span>© 2026 Integra Labs. Contenido demostrativo.</span>
+      <span>Hecho para comunidades educativas</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background-color: #051821;
+    color: #ffffff;
+    padding-top: 4.5rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 4rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.25rem;
+  }
+
+  .logo-icon-bg {
+    width: 36px;
+    height: 36px;
+    background-color: var(--color-teal-primary);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-icon-bg svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .brand-desc {
+    font-size: 0.9rem;
+    color: #7b9aa6;
+    line-height: 1.6;
+    max-width: 300px;
+  }
+
+  .footer-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .footer-col h4 {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #a8c5d1;
+    margin-bottom: 1.25rem;
+  }
+
+  .footer-col a {
+    display: block;
+    font-size: 0.875rem;
+    color: #7b9aa6;
+    margin-bottom: 0.75rem;
+    transition: color 0.2s;
+  }
+
+  .footer-col a:hover {
+    color: #3bf1d4;
+  }
+
+  .footer-bottom-bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8125rem;
+    color: #5c7b87;
+  }
+
+  @media (max-width: 960px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    .footer-columns {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-bottom-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
+
+  @media (max-width: 540px) {
+    .footer-columns {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
