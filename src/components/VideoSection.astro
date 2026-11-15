@@ -1,0 +1,69 @@
+---
+const videoId = 'J5McKSZXYkY';
+---
+
+<section class="video-section" id="video">
+  <div class="container text-center">
+    <span class="section-tag">Video</span>
+    <h2 class="section-title">Conoce Quadrapp en acción</h2>
+    <p class="section-desc centered">
+      Mira cómo Quadrapp te ayuda a anticipar el estacionamiento antes de salir.
+    </p>
+
+    <div class="video-frame">
+      <iframe
+        src={`https://www.youtube-nocookie.com/embed/${videoId}`}
+        title="Video de presentación de Quadrapp"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<style>
+  .video-section {
+    padding: 6rem 0;
+    background-color: var(--color-bg-mint-light);
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .centered {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+
+  .video-frame {
+    max-width: 960px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 12px 30px rgba(0, 125, 112, 0.08);
+    background-color: var(--color-bg-hero);
+  }
+
+  .video-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+
+  @media (max-width: 960px) {
+    .video-section {
+      padding: 4rem 0;
+    }
+
+    .video-frame {
+      border-radius: var(--radius-md);
+    }
+  }
+</style>
